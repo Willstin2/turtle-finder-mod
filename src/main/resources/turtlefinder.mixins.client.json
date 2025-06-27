@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.turtlefinder.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "turtlefinder.refmap.json",
+  "client": [
+    "WorldRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
