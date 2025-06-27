@@ -3,32 +3,23 @@
   "id": "turtlefinder",
   "version": "1.0.0",
   "name": "Turtle Finder",
-  "description": "A mod that helps you find and track sea turtles in your world",
-  "authors": [
-    "Willstin"
-  ],
-  "contact": {
-    "homepage": "https://example.com/",
-    "sources": "https://github.com/yourname/turtle-finder"
-  },
+  "description": "Highlights sea turtles in 1.21.5, draws lines to them, and shows a count.",
+  "authors": ["your-name"],
+  "contact": {},
   "license": "MIT",
-  "icon": "assets/turtlefinder/icon.png",
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
     "client": [
-      "com.turtlefinder.TurtleFinderClient"
+      "com.example.turtlefinder.TurtleFinderMod"
     ]
   },
   "mixins": [
-    "turtlefinder.mixins.client.json"
+    "turtlefinder.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.16.0",
-    "fabric-api": "*",
-    "minecraft": "~1.21.4"
-  },
-  "suggests": {
-    "another-mod": "*"
-  },
-  "accessWidener": "turtlefinder.accesswidener"
+    "fabricloader": ">=0.16.14",
+    "fabric": "*",
+    "minecraft": "1.21.5",
+    "java": ">=17"
+  }
 }
